@@ -1,6 +1,6 @@
 # simple_practice
 
-hackerrank
-codewars
-checkio
-scotch.io
+#hackerrank
+#codewars
+#checkio
+#scotch.io
