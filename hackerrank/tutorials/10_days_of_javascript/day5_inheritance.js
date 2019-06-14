@@ -9,13 +9,16 @@ class Rectangle {
  *  Write code that adds an 'area' method to the Rectangle class' prototype
  */
 Rectangle.prototype.area = function () {
-    if (this.h) return this.h * this.w;
-    return this.w ** 2;
+    return this.h * this.w;
 }
 /*
  * Create a Square class that inherits from Rectangle and implement its class constructor
  */
-class Square extends Rectangle {}
+class Square extends Rectangle {
+    constructor(s) {
+        super(s, s);
+    }
+}
 
 if (JSON.stringify(Object.getOwnPropertyNames(Square.prototype)) === JSON.stringify([ 'constructor' ])) {
     const rec = new Rectangle(3, 4);
